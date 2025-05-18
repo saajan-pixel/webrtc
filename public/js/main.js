@@ -25,6 +25,11 @@ const PeerConnection = (function () {
       { urls: "stun:stun3.l.google.com:5349" },
       { urls: "stun:stun4.l.google.com:19302" },
       { urls: "stun:stun4.l.google.com:5349" },
+      {
+        urls: "turn:global.relay.metered.ca:443",
+        username: "openai",
+        credential: "openai",
+      },
     ];
 
     peerConnection = new RTCPeerConnection(iceServers);
